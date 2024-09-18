@@ -1,0 +1,94 @@
+{
+    "sourceFile": "js/script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1726680726453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1726680822769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +0,0 @@\n-console.log('Hello, World!');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680828905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+$(document).ready(function() {\r\n+    // jQuery code\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680866801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n $(document).ready(function() {\r\n-    // jQuery code\r\n-}\n\\ No newline at end of file\n+    console.log('Hello World');\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680962834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n $(document).ready(function() {\r\n-    console.log('Hello World');\r\n+    let \r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680975451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n $(document).ready(function() {\r\n-    let \r\n+    setInterval(function() {\r\n+    });\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680985012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-    });\r\n+        let date = new Date();\r\n+        \r\n+    },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680990696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-        let date = new Date();\r\n-        \r\n+        let date = new moment();\r\n+\r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681005795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment();\r\n+        $('#date').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681016060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment();\r\n         $('#date').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n+        console.log(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681027022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment();\r\n-        $('#date').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n+        $('#clock').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n         console.log(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681033042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment();\r\n         $('#clock').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n-        console.log(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681042188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment();\r\n-        $('#clock').text(date.format('MMMM Do YYYY, h:mm:ss a'));\r\n+        $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681067415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-        let date = new moment();\r\n+        let date = new moment({\r\n+            hour: 23,\r\n+            minute: 59,\r\n+            second\r\n+        });\r\n         $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681076027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = new moment({\r\n-            hour: 23,\r\n-            minute: 59,\r\n-            second\r\n+            timezone: 'Europe/Paris'\r\n         });\r\n         $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n"
+                },
+                {
+                    "date": 1726681083580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-        let date = new moment({\r\n-            timezone: 'Europe/Paris'\r\n-        });\r\n+        let date = new moment();\r\n         $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681134056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-        let date = new moment();\r\n+        let date = new moment().tz('Europe/Paris');\r\n         $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681151461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+$(document).ready(function() {\r\n+    setInterval(function() {\r\n+        let date = new moment();\r\n+        $('#clock').text(date.format('H:mm:ss'));\r\n+\r\n+    },1000);\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681491102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n-        let date = new moment();\r\n+        let date = moment();\r\n         $('#clock').text(date.format('H:mm:ss'));\r\n \r\n     },1000);\r\n-});\n-$(document).ready(function() {\r\n-    setInterval(function() {\r\n-        let date = new moment().tz('Europe/Paris');\r\n-        $('#clock').text(date.format('H:mm:ss'));\r\n-\r\n-    },1000);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681566533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = moment();\r\n-        $('#clock').text(date.format('H:mm:ss'));\r\n+        $('#clock').text(date.format('H:mm:ss').tz('Europe/Paris').format('H:mm:ss'));\r\n \r\n     },1000);\r\n });\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1726680726453,
+            "name": "Commit-0",
+            "content": "console.log('Hello, World!');"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1726680625437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1726680656909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    \r\n+    <p>coucou</p>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680664292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <stylesheet href=\"style.css\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n     <p>coucou</p>\r\n"
+                },
+                {
+                    "date": 1726680717957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <stylesheet href=\"style.css\">\r\n+    <script src=\"script.js\"></script>\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n     <p>coucou</p>\r\n"
+                },
+                {
+                    "date": 1726680735883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+<!DOCTYPE html>\r\n+<html lang=\"fr\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <script src=\"./js/script.js\"></script>\r\n+    <title>Document</title>\r\n+</head>\r\n+<body>\r\n+    <p>coucou</p>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680744995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,22 +3,10 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"./js/script.js\"></script>\r\n-    <title>Document</title>\r\n+    <title>Flip clock</title>\r\n </head>\r\n <body>\r\n     <p>coucou</p>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <script src=\"script.js\"></script>\r\n-    <title>Document</title>\r\n-</head>\r\n-<body>\r\n-    <p>coucou</p>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680753112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"./js/script.js\"></script>\r\n+    <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n     <p>coucou</p>\r\n"
+                },
+                {
+                    "date": 1726680787041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n-    <p>coucou</p>\r\n+    <div id=\"clock\"></div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726680822785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"./js/script.js\"></script>\r\n+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1726680909993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"./js/script.js\"></script>\r\n-    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js\"></script>\r\n+    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1726680922048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n <html lang=\"fr\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <script src=\"./js/script.js\"></script>\r\n     <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n+    <script src=\"./js/script.js\"></script>\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n"
+                },
+                {
+                    "date": 1726680962836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n+    <script src=\"./js/moment.js\"\"></script>\r\n     <script src=\"./js/script.js\"></script>\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1726681543309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <script src=\"./js/moment.js\"\"></script>\r\n+    <script src=\"./js/moment_tz.js\"\"></script>\r\n     <script src=\"./js/script.js\"></script>\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n"
+                }
+            ],
+            "date": 1726680625437,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}
