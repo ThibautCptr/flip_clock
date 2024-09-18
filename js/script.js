@@ -3,5 +3,5 @@ $(document).ready(function() {
         let date = moment();
         $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));
 
-    },1000);
+    },10);
 });

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 24,
             "patches": [
                 {
                     "date": 1726680625437,
@@ -56,6 +56,54 @@
                 {
                     "date": 1726681543309,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <script src=\"./js/moment.js\"\"></script>\r\n+    <script src=\"./js/moment_tz.js\"\"></script>\r\n     <script src=\"./js/script.js\"></script>\r\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1726681700328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+<!DOCTYPE html>\r\n+<html lang=\"fr\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n+    <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n+    <script src=\"./js/moment.js\"\"></script>\r\n+    <script src=\"./js/moment_tz.js\"\"></script>\r\n+    <script src=\"./js/script.js\"></script>\r\n+    <title>Flip clock</title>\r\n+</head>\r\n+<body>\r\n+    <div id=\"clock\"></div>\r\n+    <div id=\"clock_2\"></div>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681817000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,23 +11,7 @@\n     <title>Flip clock</title>\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n-    <div id=\"clock_2\"></div>\r\n+    <!-- <div id=\"clock_2\"></div> -->\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"fr\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n-    <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n-    <script src=\"./js/moment.js\"\"></script>\r\n-    <script src=\"./js/moment_tz.js\"\"></script>\r\n-    <script src=\"./js/script.js\"></script>\r\n-    <title>Flip clock</title>\r\n-</head>\r\n-<body>\r\n-    <div id=\"clock\"></div>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681828159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <script src=\"./js/moment.js\"\"></script>\r\n     <script src=\"./js/moment_tz.js\"\"></script>\r\n     <script src=\"./js/script.js\"></script>\r\n-    <title>Flip clock</title>\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n"
+                },
+                {
+                    "date": 1726681877913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n-    <script src=\"./js/moment.js\"\"></script>\r\n-    <script src=\"./js/moment_tz.js\"\"></script>\r\n+    <!-- <script src=\"./js/moment.js\"\"></script> -->\r\n+    <!-- <script src=\"./js/moment_tz.js\"\"></script> -->\r\n     <script src=\"./js/script.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n"
+                },
+                {
+                    "date": 1726681887231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,13 @@\n <html lang=\"fr\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n+    <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script> -->\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <!-- <script src=\"./js/moment.js\"\"></script> -->\r\n     <!-- <script src=\"./js/moment_tz.js\"\"></script> -->\r\n-    <script src=\"./js/script.js\"></script>\r\n+    <!-- <script src=\"./js/script.js\"></script> -->\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n"
+                },
+                {
+                    "date": 1726681901594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,15 @@\n <html lang=\"fr\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script> -->\r\n+    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n-    <!-- <script src=\"./js/moment.js\"\"></script> -->\r\n-    <!-- <script src=\"./js/moment_tz.js\"\"></script> -->\r\n-    <!-- <script src=\"./js/script.js\"></script> -->\r\n+    <script src=\"./js/moment.js\"\"></script>\r\n+    <script src=\"./js/moment_tz.js\"\"></script>\r\n+    <script src=\"./js/script.js\"></script>\r\n </head>\r\n <body>\r\n-    <div id=\"clock\"></div>\r\n+    <!-- <div id=\"clock\"></div> -->\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726681906720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,13 @@\n <html lang=\"fr\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n+    <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <script src=\"./js/moment.js\"\"></script>\r\n     <script src=\"./js/moment_tz.js\"\"></script>\r\n-    <script src=\"./js/script.js\"></script>\r\n+    <script src=\"./js/script.js\"></script> -->\r\n </head>\r\n <body>\r\n     <!-- <div id=\"clock\"></div> -->\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n"
+                },
+                {
+                    "date": 1726681918145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n     <script src=\"./js/moment.js\"\"></script>\r\n-    <script src=\"./js/moment_tz.js\"\"></script>\r\n-    <script src=\"./js/script.js\"></script> -->\r\n+    <script src=\"./js/moment_tz.js\"\"></script> -->\r\n+    <script src=\"./js/script.js\"></script>\r\n </head>\r\n <body>\r\n     <!-- <div id=\"clock\"></div> -->\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n"
+                },
+                {
+                    "date": 1726681930532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,13 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n-    <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n+\r\n     <script src=\"./js/moment.js\"\"></script>\r\n     <script src=\"./js/moment_tz.js\"\"></script> -->\r\n     <script src=\"./js/script.js\"></script>\r\n+    <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n </head>\r\n <body>\r\n     <!-- <div id=\"clock\"></div> -->\r\n     <!-- <div id=\"clock_2\"></div> -->\r\n"
+                },
+                {
+                    "date": 1726681948932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,13 @@\n <html lang=\"fr\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <!-- <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n+    <script src=\"https://code.jquery.com/jquery-3.7.1.js\" integrity=\"sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=\" crossorigin=\"anonymous\"></script>\r\n \r\n     <script src=\"./js/moment.js\"\"></script>\r\n-    <script src=\"./js/moment_tz.js\"\"></script> -->\r\n+    <script src=\"./js/moment_tz.js\"\"></script>\r\n+\r\n     <script src=\"./js/script.js\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1726681967212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <script src=\"./js/script.js\"></script>\r\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n </head>\r\n <body>\r\n-    <!-- <div id=\"clock\"></div> -->\r\n-    <!-- <div id=\"clock_2\"></div> -->\r\n+    <div id=\"clock\"></div>\r\n+    <div id=\"clock_2\"></div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682058986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,6 @@\n     <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n </head>\r\n <body>\r\n     <div id=\"clock\"></div>\r\n-    <div id=\"clock_2\"></div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1726680625437,
