@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1726680726453,
@@ -124,6 +124,30 @@
                 {
                     "date": 1726682053666,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,6 @@\n     setInterval(function() {\r\n         let date = moment();\r\n         $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));\r\n \r\n-        date = new Date();\r\n-        $('#clock_2').text(date.toLocaleTimeString());\r\n-\r\n     },10);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682356237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $(document).ready(function() {\r\n     setInterval(function() {\r\n         let date = moment();\r\n         $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));\r\n-\r\n+        console.log(date.tz('Europe/Paris').format('H:mm:ss'));\r\n     },10);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682414214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+$(document).ready(function() {\r\n+    setInterval(function() {\r\n+        let date = moment();\r\n+        $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));\r\n+    },10);\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682446562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+$(document).ready(function() {\r\n+    var clock = $('#clock').FlipClock({\r\n+        clockFace: 'TwentyFourHourClock'\r\n+    });\r\n+\r\n+    setInterval(function() {\r\n+        let date = moment();\r\n+        $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));\r\n+    },10);\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682459182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+$(document).ready(function() {\r\n+    var clock = $('#clock').FlipClock({\r\n+        clockFace: 'TwentyFourHourClock'\r\n+    });\r\n+\r\n+    setInterval(function() {\r\n+        setInterval(function() {\r\n+            let currentTime = moment().tz('Europe/Paris').format('HHmmss');\r\n+            clock.setTime(currentTime);\r\n+            clock.start();\r\n+        }, 1000);\r\n+        \r\n+    },10);\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682512986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,7 @@\n $(document).ready(function() {\r\n-    var clock = $('#clock').FlipClock({\r\n-        clockFace: 'TwentyFourHourClock'\r\n-    });\r\n-\r\n+    \r\n     setInterval(function() {\r\n-        let currentTime = moment().tz('Europe/Paris').format('HHmmss');\r\n-        clock.setTime(currentTime);\r\n-        clock.start();\r\n-    }, 10);\r\n+        let date = moment();\r\n+        $('#clock').text(date.tz('Europe/Paris').format('H:mm:ss'));\r\n+    },10);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726682563977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,40 @@\n+$(document).ready(function () {\r\n+    function updateTime() {\r\n+        let now = moment().tz('Europe/Paris');\r\n+        let hours = now.format('HH');\r\n+        let minutes = now.format('mm');\r\n+        let seconds = now.format('ss');\r\n+\r\n+        // Mettre à jour les unités avec l'effet flip\r\n+        updateFlip($('#hours'), hours);\r\n+        updateFlip($('#minutes'), minutes);\r\n+        updateFlip($('#seconds'), seconds);\r\n+    }\r\n+\r\n+    function updateFlip(flipUnit, newValue) {\r\n+        let currentTop = flipUnit.find('.flip-clock-active .top').text();\r\n+        if (currentTop !== newValue) {\r\n+            let before = flipUnit.find('.flip-clock-before');\r\n+            let active = flipUnit.find('.flip-clock-active');\r\n+\r\n+            before.removeClass('flipped');\r\n+            active.removeClass('flipped');\r\n+\r\n+            // Définir les nouvelles valeurs\r\n+            before.find('.top').text(currentTop);\r\n+            before.find('.bottom').text(currentTop);\r\n+            active.find('.top').text(newValue);\r\n+            active.find('.bottom').text(newValue);\r\n+\r\n+            // Ajouter l'animation de flip\r\n+            setTimeout(function () {\r\n+                before.addClass('flipped');\r\n+                active.addClass('flipped');\r\n+            }, 50);\r\n+        }\r\n+    }\r\n+\r\n+    // Mise à jour toutes les secondes\r\n+    setInterval(updateTime, 1000);\r\n+    updateTime();\r\n+});\r\n"
                 }
             ],
             "date": 1726680726453,

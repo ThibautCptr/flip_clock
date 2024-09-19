@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip Clock</title>
 
-    <script src="./js/moment.js""></script>
-    <script src="./js/moment_tz.js""></script>
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="./js/script.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- Inclure jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="./js/moment.js"></script>
+  <script src="./js/moment_tz.js"></script>
+
+  <link rel="stylesheet" href="./js/flip-master/dist/flip.min.css" />
+  <script src="./js/flip-master/dist/flip.min.js"></script>
+
+
+  <script src="./js/script.js"></script>
 </head>
+
 <body>
-    <div id="clock"></div>
+  <div class="tick tick_minutes"
+  data-did-init="updateTimeHours"
+  >
+    <span data-view="flip"></span>
+
+  </div>
+
+  <div class="tick tick_minutes"
+  data-did-init="updateTimeMinutes"
+  >
+    <span data-view="flip"></span>
+
+  </div>
+
+  <div class="tick tick_minutes"
+  data-did-init="updateTimeSeconds"
+  >
+    <span data-view="flip"></span>
+
+  </div>
 </body>
+
 </html>

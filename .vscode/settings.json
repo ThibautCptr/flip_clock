@@ -1,0 +1,10 @@
+{
+    "workbench.editor.enablePreview": true,
+    "explorer.sortOrderLexicographicOptions": "default",
+    "editor.stickyTabStops": false,
+    "editor.tabFocusMode": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.scrollToSwitchTabs": false,
+    "workbench.editor.wrapTabs": false
+}
